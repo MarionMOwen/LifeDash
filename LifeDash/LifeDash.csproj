@@ -20,18 +20,32 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="script\angular-route.min.js" />
+    <Content Include="script\angular.min.js" />
+    <Content Include="script\app.js" />
+    <Content Include="style\app.css" />
+    <Content Include="style\main.css" />
+    <Content Include="style\main.min.css" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="script\app.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="script\app.js.map" />
+    <Content Include="style\main.css.map" />
+    <Content Include="style\main.less" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="script\typings\angular\" />
+    <Folder Include="script\typings\jquery\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
