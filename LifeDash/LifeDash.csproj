@@ -18,22 +18,21 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="index.html" />
-    <Content Include="script\angular-route.min.js" />
-    <Content Include="script\angular.min.js" />
-    <Content Include="script\app.js" />
-    <Content Include="style\app.css" />
+    <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="style\bootstrap.min.css" />
     <Content Include="style\main.css" />
     <Content Include="style\main.min.css" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="script\app.ts" />
+    <TypeScriptCompile Include="scripts\app.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="script\app.js.map" />
+    <Content Include="scripts\app.js.map" />
     <Content Include="style\main.css.map" />
     <Content Include="style\main.less" />
     <None Include="web.Debug.config">
@@ -44,8 +43,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="script\typings\angular\" />
-    <Folder Include="script\typings\jquery\" />
+    <Folder Include="app\common\services\" />
+    <Folder Include="scripts\typings\angular\" />
+    <Folder Include="scripts\typings\jquery\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
