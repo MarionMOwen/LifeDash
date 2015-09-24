@@ -2,31 +2,46 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>TypeScript HTML App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A Heads-Up display to be placed on the wall to showcase information about family, friends, or happenings in your lives. The display may showcase a calendar, weather information, local news, photo slideshow, and other dynamic or static information. The dashboard is personalized to your needs.">
+    <meta name="author" content="Marion Owen">
+    <title>LifeDash Display</title>
+
+    <!--LifeDash Style-->
     <link href="style/bootstrap.min.css" rel="stylesheet" />
-    <link href="style/main.min.css" rel="stylesheet" />
+    <link href="style/main.min.css" rel="stylesheet" />    
+    <!-- Timeline CSS -->
+    <link href="style/components/timeline.css" rel="stylesheet" />
+    <!-- Morris Charts CSS -->
+    <link href="style/components/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="style/components/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
-<body>
-    <h1>TypeScript HTML App</h1>
+<body ng-app="lifeDashApp">    
+        <h1>Life Dash Main</h1>
 
-    <div id="content">
-
-        <h2>Sample Content </h2>
-
-
+    <div class="container">
+        <ng-view></ng-view>
     </div>
 
     <!-- Library Scripts -->
-    <script src="scripts/angular.js"></script>
-    <script src="scripts/angular-resource.js"></script>
-    <script src="scripts/angular-mocks.js"></script>
-    <script src="scripts/angular-route.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/components/jquery.min.js"></script>
 
     <!--Application Scripts-->
     <script src="scripts/app.js"></script>
+
+    <!-- Morris Charts JavaScript -->    
+    <!--<script src="scripts/components/raphael-min.js"></script>
+    <script src="scripts/components/morris.min.js"></script>
+    <script src="scripts/components/morris-data.js"></script>-->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="scripts/components/sb-admin-2.js"></script>
 
 </body>
 </html>

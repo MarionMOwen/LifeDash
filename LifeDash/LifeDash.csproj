@@ -18,23 +18,57 @@
     <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="app\views\adminView.html" />
+    <Content Include="app\views\dashView.html" />
     <Content Include="index.html" />
     <Content Include="scripts\angular-route.min.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\components\jquery.min.js" />
+    <Content Include="scripts\components\morris-data.js" />
+    <Content Include="scripts\components\morris.min.js" />
+    <Content Include="scripts\components\raphael-min.js" />
+    <Content Include="scripts\components\sb-admin-2.js" />
     <Content Include="style\bootstrap.min.css" />
+    <Content Include="style\components\font-awesome.min.css" />
+    <Content Include="style\components\morris.css" />
+    <Content Include="style\components\timeline.css" />
     <Content Include="style\main.css" />
     <Content Include="style\main.min.css" />
+    <Content Include="style\components\sb-admin-2.css" />
+    <Content Include="style\components\sb-admin-2.min.css">
+      <DependentUpon>sb-admin-2.css</DependentUpon>
+    </Content>
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\modules\clockModule.ts" />
+    <TypeScriptCompile Include="app\views\adminViewController.ts" />
+    <TypeScriptCompile Include="app\views\dashViewController.ts" />
     <TypeScriptCompile Include="scripts\app.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="scripts\app.js.map" />
     <Content Include="style\main.css.map" />
     <Content Include="style\main.less" />
+    <Content Include="packages.config" />
+    <Content Include="style\components\sb-admin-2.less" />
+    <Content Include="style\components\variables.less" />
+    <Content Include="style\components\mixins.less" />
+    <Content Include="style\components\sb-admin-2.css.map">
+      <DependentUpon>sb-admin-2.css</DependentUpon>
+    </Content>
+    <Content Include="style\fonts\fontawesome-webfont.ttf" />
+    <Content Include="style\fonts\fontawesome-webfont.woff" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -44,8 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\common\services\" />
-    <Folder Include="scripts\typings\angular\" />
-    <Folder Include="scripts\typings\jquery\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
