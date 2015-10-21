@@ -20,8 +20,12 @@
   <ItemGroup>
     <Content Include="app\views\adminView.html" />
     <Content Include="app\views\dashView.html" />
+    <Content Include="app\views\headerNews.html" />
+    <Content Include="app\views\headerTime.html" />
     <Content Include="index.html" />
+    <Content Include="scripts\angular-route.js" />
     <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -46,6 +50,7 @@
     <TypeScriptCompile Include="app\modules\clockModule.ts" />
     <TypeScriptCompile Include="app\views\adminViewController.ts" />
     <TypeScriptCompile Include="app\views\dashViewController.ts" />
+    <TypeScriptCompile Include="app\views\headerTimeController.ts" />
     <TypeScriptCompile Include="scripts\app.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="scripts\typings\angularjs\angular-cookies.d.ts" />

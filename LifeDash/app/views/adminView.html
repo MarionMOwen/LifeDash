@@ -1,5 +1,5 @@
 ﻿<!--This is the view for the Administration Panel.-->
-<h2>Admin View</h2>
+<h1>Admin View</h1>
 <div class="panel-heading">
     <a class="btn btn-default"
        ng-href="#dashboard"
@@ -7,8 +7,20 @@
         < Back
     </a>
 </div>
-<!-- /.row -->
+
+<!--Times+News.row-->
 <div class="row">
+    <div class="col-lg-4">
+        <div data-ng-include="'app/views/headerTime.html'"></div> <!--Inlcude the time and weather-->
+    </div>
+    <div class="col-lg-12">
+        <div ng-include="'app/views/headerNews.html'"></div> <!--Inlcude the news scroll-->
+    </div>
+</div>
+<!-- Times+News /.row -->
+
+<!-- /.row -->
+<div class="row" ng-controller="AdminViewController" >
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -20,8 +32,9 @@
                         <form role="form">
                             <div class="form-group">
                                 <label>Text Input</label>
-                                <input class="form-control">
-                                <p class="help-block">Example block-level help text here.</p>
+                                <input class="form-control" value="{{av.sampleInput}}">
+                                <p class="help-block"></p>
+                                <button ng-click="av.greet()" class="btn btn-success">Save sample...</button> <!--Sample save content button example-->
                             </div>
                             <div class="form-group">
                                 <label>Text Input with Placeholder</label>

@@ -8,6 +8,7 @@
     <meta name="description" content="A Heads-Up display to be placed on the wall to showcase information about family, friends, or happenings in your lives. The display may showcase a calendar, weather information, local news, photo slideshow, and other dynamic or static information. The dashboard is personalized to your needs.">
     <meta name="author" content="Marion Owen">
     <title>LifeDash Display</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
     <!--LifeDash Style-->
     <link href="style/bootstrap.min.css" rel="stylesheet" />
@@ -20,28 +21,31 @@
     <link href="style/components/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
-<body ng-app="lifeDashApp">    
-        <h1>Life Dash Main</h1>
-
-    <div class="container">
+<body ng-app="lifeDashApp">
+    <div class="dash-wrapper" id="">
         <ng-view></ng-view>
     </div>
 
     <!-- Library Scripts -->
-    <script src="scripts/angular.min.js"></script>
-    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/angular.js"></script>    
+    <script src="scripts/angular-route.js"></script>
     <script src="scripts/components/jquery.min.js"></script>
 
     <!--Application Scripts-->
     <script src="scripts/app.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>-->
 
-    <!-- Morris Charts JavaScript -->    
+    <!-- Morris Charts JavaScript -->
     <!--<script src="scripts/components/raphael-min.js"></script>
     <script src="scripts/components/morris.min.js"></script>
     <script src="scripts/components/morris-data.js"></script>-->
-
     <!-- Custom Theme JavaScript -->
     <script src="scripts/components/sb-admin-2.js"></script>
+
+    <!--Controllers-->
+    <script src="app/views/headerTimeController.js"></script>
+    <script src="app/views/dashViewController.js"></script>
+    <script src="app/views/adminViewController.js"></script>
 
 </body>
 </html>

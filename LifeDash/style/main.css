@@ -274,4 +274,8 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
   color: #df8a13;
 }
+.dash-wrapper {
+  padding: 20px;
+  padding-top: 0px;
+}
 /*# sourceMappingURL=main.css.map */
