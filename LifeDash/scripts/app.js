@@ -5,7 +5,7 @@ var lifeDashApp;
     var main = angular.module("lifeDashApp", ["ngRoute"]); //This is for temp HTTP resource mocking. remove
     //this if we want to use a different service.
     main.config(routeConfig);
-    main.controller("HeaderViewController", []);
+    main.controller("HeaderTimeViewController", ['$scope', '$interval', '$element']);
     routeConfig.$inject = ["$routeProvider"]; //Specifies the route prerameter. Ensures this works propertly even after minification.
     function routeConfig($routeProvider) {
         $routeProvider
