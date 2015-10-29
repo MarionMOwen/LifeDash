@@ -6,19 +6,21 @@
     main.config(routeConfig);
 
 
+    main.controller("HeaderTimeViewController", ['$scope', '$interval', '$element']);
+
+
     routeConfig.$inject = ["$routeProvider"]; //Specifies the route prerameter. Ensures this works propertly even after minification.
     function routeConfig($routeProvider: ng.route.IRouteProvider): void {
         $routeProvider
             .when("/dashboard",
                 {
                     templateUrl: "app/views/dashView.html",
-                    controller: "CreateTime as vm"
+                    //controller: "CreateTime as vm"
                 })       
             .when("/admin",
                 {
-                    templateUrl: "app/views/adminview.html"
-                    //,
-                    //controller: "AdminViewController as vm"
+                    templateUrl: "app/views/adminView.html",
+                    controller: "AdminViewController as av"
                 })            
             .otherwise("/dashboard");
     }
