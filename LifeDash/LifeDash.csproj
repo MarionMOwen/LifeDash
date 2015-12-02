@@ -10,12 +10,13 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app\views\adminView.html" />
@@ -23,9 +24,7 @@
     <Content Include="app\views\headerNews.html" />
     <Content Include="app\views\headerTime.html" />
     <Content Include="index.html" />
-    <Content Include="scripts\angular-route.js" />
     <Content Include="scripts\angular-route.min.js" />
-    <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\app.js" />
     <Content Include="scripts\bootstrap.min.js" />
